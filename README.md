@@ -10,6 +10,8 @@ Please install the following before proceeding:
 - [Java 17 JDK](https://codingnomads.com/how-to-install-java)  
 - [IntelliJ IDE Community Edition](https://www.jetbrains.com/idea/download)  
 - [Git](https://codingnomads.com/how-to-install-git-windows-linux-mac)  
+- [Git](https://codingnomads.com/how-to-install-git-windows-linux-mac)  
+
 
 ## Getting Started
 
