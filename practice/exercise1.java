@@ -1,4 +1,6 @@
-class practice {
+package practice;
+
+class Exercise1 {
     public static void main(String[] args) {
       // example 
       double i = 1289L;
