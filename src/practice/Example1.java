@@ -24,6 +24,12 @@ public class Example1 {
       System.out.println("Long m value "+m);
       System.out.println("Float f value "+f);
 
+      // Example of narrow casting
+      double w = 18.23458;
+      int u = (int) w;
+      System.out.println("int w value "+w);
+      System.out.println("int u value "+u);
+
     }
   }
   
