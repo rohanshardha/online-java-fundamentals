@@ -24,6 +24,15 @@ public class Exercise_02 {
     public static void main(String[] args) {
 
         // write code here
+        int a = 10;
+        double d = a;
+        System.out.println("The double d converted from int a is " + d);
+
+        double b = 10.5d;
+        int c = (int) b;
+        System.out.println(("The int c created by converting double b is " + c));
+
+
 
     }
 }

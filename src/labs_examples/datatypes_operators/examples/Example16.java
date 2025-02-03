@@ -7,9 +7,9 @@ class LtoD_2 {
         double D;
 
         D = 100123285.0;
-        //L = D; // Illegal!!!
+        L = (long) D; // Illegal!!!
 
-        //System.out.println("L and D: " + L + " " + D);
+        System.out.println("L and D: " + L + " " + D);
 
     }
 }
