@@ -9,9 +9,13 @@ class Power {
         for(int i=0; i < 10; i++) {
             result = 1;
             e = i;
+            System.out.println("i is " + i);
+            System.out.println("result variable is " + result);
             while(e > 0) {
                 result *= 2;
+                System.out.println("result variable is " + result);
                 e--;
+                System.out.println(("e is after the decrement is " + e));
             }
 
             System.out.println("2 to the " + i +
