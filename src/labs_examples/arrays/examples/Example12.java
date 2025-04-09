@@ -31,7 +31,7 @@ class Queue {
             return (char) 0;
         }
 
-        return q[getloc++];
+                return q[getloc++];
     }
 }
 

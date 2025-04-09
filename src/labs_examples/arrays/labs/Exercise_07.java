@@ -1,4 +1,5 @@
 package labs_examples.arrays.labs;
+import java.util.ArrayList;
 
 /**
  *  ArrayLists
@@ -10,4 +11,23 @@ package labs_examples.arrays.labs;
  *
  */
 public class Exercise_07 {
-}
+
+    public static void main(String[] args) {
+
+        ArrayList<Integer> arraylist = new ArrayList<>();
+
+        for (int i = 1; i <= 10; i++) {
+            arraylist.add(i);
+            System.out.print(arraylist.get(i-1) + " ");
+        }
+        System.out.println();
+
+        if (arraylist.isEmpty()) {
+            System.out.println("The Arrayst is empty");
+        } else {
+            System.out.println("The arraylist is not empty");
+        }
+        System.out.println("The size of the arrayst is: " + arraylist.size());
+      
+    }
+    }

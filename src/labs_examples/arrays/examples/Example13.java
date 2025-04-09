@@ -10,6 +10,7 @@ class ForEach {
         for(int x : nums) {
             System.out.print("Index is: " + count);
             System.out.println(" - Value is: " + x);
+            sum += x;
 
             count++;
         }

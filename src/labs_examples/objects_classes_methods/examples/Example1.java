@@ -7,7 +7,7 @@ package labs_examples.objects_classes_methods.examples;
 
 class Vehicle4 {
 
-    private double interestRate = .05;
+    private static final double INTEREST_RATE = 0.05;
 
     // notice that the variables below are private
     private int passengers; // number of passengers
@@ -17,11 +17,27 @@ class Vehicle4 {
     Vehicle4(int passengers, int fuelcap, int mpg){
         this.passengers = passengers;
         this.fuelcap = fuelcap;
-        this.mpg = mpg;
+                this.mpg = mpg;
     }
 
-    public double getInterestRate(){
-        return this.interestRate;
+    public int getPassengers() {
+        return passengers;
+    }
+
+    public int getFuelCap() {
+        return fuelcap;
+    }
+
+    public int getMpg() {
+        return mpg;
+    }
+
+    public int calculateRange() {
+        return fuelcap * mpg;
+    }
+
+    public static double getInterestRate(){
+        return INTEREST_RATE;
     }
 
 }
@@ -34,39 +50,23 @@ class VehicleDemo {
 
         // assign values to fields in minivan
 
-
         Vehicle4 minivan = new Vehicle4(8, 20, 20);
 
-        double i = minivan.getInterestRate();
+        double i = Vehicle4.getInterestRate();
+        System.out.println("The interest rate on mini van is " + i);
 
+        range = minivan.calculateRange();
 
-        // UNCOMMENT THE LINES BELOW - WHY DO WE SEE ERRORS?
-
-        /*
-        minivan.passengers = 7;
-        minivan.fuelcap = 16;
-        minivan.mpg = 22;
-
-
-        Vehicle4 corvette = new Vehicle4();
-        corvette.passengers = 2;
-        corvette.fuelcap = 15;
-        corvette.mpg = 12;
-
-        range = minivan.mpg * minivan.fuelcap;
-
-        System.out.println("Minivan can carry " + minivan.passengers +
+        System.out.println("Minivan can carry " + minivan.getPassengers() +
                 " with a range of " + range);
-        */
 
         int val = sum(10,12);
+        System.out.println("The sum of the numbers is " + val);
 
     }
 
     public static int intMethod(){
         int number = 10;
-
-
         return number;
     }
 

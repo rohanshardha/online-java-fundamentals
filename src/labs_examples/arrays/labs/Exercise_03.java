@@ -18,6 +18,19 @@ package labs_examples.arrays.labs;
 public class Exercise_03 {
 
     public static void main(String[] args) {
-        
+
+        int[][] table = new int[5][5];
+        int num = 3;
+
+        for (int i =0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                table[i][j] = (num*(j + 1)) + (15 * i);
+                // Just increment the num by 3
+                // table[i][j] = num;
+                //num += 3;
+                System.out.print(table[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
 }

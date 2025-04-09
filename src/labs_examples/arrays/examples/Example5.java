@@ -30,6 +30,9 @@ class Bubble {
                 }
             }
         }
+        for(String s: str) {
+            System.out.print(s + "dm");
+        }
 
         String str2 = "sorter";
         int i = str2.indexOf('r');
