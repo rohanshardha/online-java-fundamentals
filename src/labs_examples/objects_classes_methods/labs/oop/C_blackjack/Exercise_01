@@ -20,9 +20,7 @@ It will not ask for bets. The user and the computer will each start with a small
 
     Deck.java (POJO - this will hold deck data)
         Card[] cards;
-        ArrayList<Integer> usedCards;
-
-    Hand.java (POJO - this will hold Hand data)
+        ArrayList<Integer> usedCards;(POJO - this will hold Hand data)
         ArrayList<Card> cards;
         int handValue;
 

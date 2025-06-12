@@ -1,4 +1,4 @@
-package labs_examples.objects_classes_methods.labs.oop;
+package labs_examples.objects_classes_methods.labs.oop.a_inheritance;
 // /**
 //  * Run the class below and study the output. What prints and why?
 //  *

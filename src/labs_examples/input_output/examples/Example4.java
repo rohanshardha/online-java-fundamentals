@@ -14,7 +14,7 @@ class ShowFile2 {
     {
         int i;
 
-        String filePath = "src/labs_examples/input_output/files/byte_data";
+        String filePath = "C:/Users/rpsha/Projects/online-java-fundamentals/src/labs_examples/input_output/files/byte_data";
 
         FileInputStream fin = null;
 

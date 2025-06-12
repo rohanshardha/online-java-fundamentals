@@ -1,4 +1,4 @@
-package labs_examples.objects_classes_methods.labs.oop.A_inheritance;
+package labs_examples.objects_classes_methods.labs.oop.a_inheritance;
 
 
 // 1) Create at least 5 classes that demonstrate an labs_examples.inheritance hierachy. The depth of the hiearchy must be at least 3. Meaning:

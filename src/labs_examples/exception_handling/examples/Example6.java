@@ -12,14 +12,13 @@ class ExcDemo4 {
                 System.out.println(numer[i] + " / " +
                         denom[i] + " is " +
                         numer[i]/denom[i]);
-            }
-            catch (ArithmeticException exc) {
+            } catch (ArithmeticException exc) {
                 // catch the exception
                 System.out.println("Can't divide by Zero!");
-            }
-            catch (ArrayIndexOutOfBoundsException exc) {
+            } catch (ArrayIndexOutOfBoundsException exc) {
                 // catch the exception
                 System.out.println("No matching element found.");
+                System.out.println(exc.getMessage());
             }
         }
     }

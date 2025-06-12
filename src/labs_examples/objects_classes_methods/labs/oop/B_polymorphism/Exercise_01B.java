@@ -1,4 +1,4 @@
-package labs_examples.objects_classes_methods.labs.oop.B_polymorphism;
+package labs_examples.objects_classes_methods.labs.oop.b_polymorphism;
 
 interface Animal {
     public void eating();

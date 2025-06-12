@@ -1,4 +1,5 @@
-package labs_examples.objects_classes_methods.labs.oop.A_inheritance;
+package labs_examples.objects_classes_methods.labs.oop.a_inheritance;
+
 
 
 // Without running the code below, please tell me what will print. Why?

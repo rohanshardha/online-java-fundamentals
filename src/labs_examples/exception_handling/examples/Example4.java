@@ -12,8 +12,8 @@ class ExcTypeMismatch {
             System.out.println("Before exception is generated.");
 
             // generate an index out-of-bounds exception
-            //nums[7] = 10;
-            y = x/i;
+            nums[7] = 10;
+            //y = x/i;
 
             System.out.println("this won't be displayed");
         }
@@ -26,6 +26,7 @@ class ExcTypeMismatch {
         }
         catch (IndexOutOfBoundsException exc1){
             System.out.println("Index out-of-bounds!");
+            System.out.println("Rohan");
         }
         catch (Exception e){
             System.out.println(e.getMessage());

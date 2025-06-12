@@ -10,9 +10,9 @@ public class CSV_Parse {
 
     public static void main(String[] args) {
 
-        ArrayList<Student> students = new ArrayList();
+        ArrayList<Student> students = new ArrayList <Student> ();
 
-        String filePath = "src/labs_examples/input_output/files/students.csv";
+        String filePath = "C:/Users/rpsha/Projects/online-java-fundamentals/src/labs_examples/input_output/files/students.csv";
 
 
 
@@ -34,6 +34,7 @@ public class CSV_Parse {
 
         for(Student student : students){
             System.out.println(student.toString());
+            System.out.println(student.getFirstName());
         }
 
     }

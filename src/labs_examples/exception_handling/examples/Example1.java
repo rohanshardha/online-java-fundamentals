@@ -11,10 +11,10 @@ class ExcDemo1 {
             // Generate an index out-of-bounds exception.
             nums[7] = 10;
             System.out.println("this won't be displayed");
-        }
-        catch (ArrayIndexOutOfBoundsException exc) {
+        } catch (ArrayIndexOutOfBoundsException exc) {
             // catch the exception
             System.out.println("Index out-of-bounds!");
+            System.out.println(exc.getMessage());
         }
         System.out.println("After catch statement.");
 

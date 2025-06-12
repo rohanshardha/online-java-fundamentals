@@ -19,8 +19,8 @@ class CopyFile {
     {
         int i;
 
-        String fileReadPath = "src/labs_examples/input_output/files/char_data.txt";
-        String fileWritePath = "src/labs_examples/input_output/files/char_data_rewrite.txt";
+        String fileReadPath = "C:/Users/rpsha/Projects/online-java-fundamentals/src/labs_examples/input_output/files/char_data.txt";
+        String fileWritePath = "C:/Users/rpsha/Projects/online-java-fundamentals/src/labs_examples/input_output/files/char_data_rewrite.txt";
 
         FileInputStream fin = null;
         FileOutputStream fout = null;
