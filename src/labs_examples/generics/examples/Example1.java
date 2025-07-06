@@ -6,7 +6,10 @@ package labs_examples.generics.examples;
 // when an object of type Gen is created.
 class Gen<T> {
     T ob; // declare an object of type T
-
+public <T> T printText(T var) {
+    //System.out.println(var);
+    return var;
+}
     // Pass the constructor a reference to
     // an object of type T.
     Gen(T o) {

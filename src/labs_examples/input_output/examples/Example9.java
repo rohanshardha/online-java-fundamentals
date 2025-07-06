@@ -19,8 +19,8 @@ class CompFiles {
     {
         int i=0, j=0;
 
-        String filePath1 = "src/labs_examples/input_output/files/char_data.txt";
-        String filePath2 = "src/labs_examples/input_output/files/char_data_2.txt";
+        String filePath1 = "C:/Users/rpsha/Projects/online-java-fundamentals/src/labs_examples/input_output/files/char_data.txt";
+        String filePath2 = "C:/Users/rpsha/Projects/online-java-fundamentals/src/labs_examples/input_output/files/char_data_2.txt";
 
 
         // Compare the files.
@@ -30,7 +30,9 @@ class CompFiles {
             // Check the contents of each file.
             do {
                 i = f1.read();
+                System.out.println((char)i);
                 j = f2.read();
+                System.out.println((char)j);
                 if(i != j)
                     break;
             } while(i != -1 && j != -1);
