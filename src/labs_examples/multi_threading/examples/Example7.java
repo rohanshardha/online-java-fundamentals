@@ -8,8 +8,7 @@ class Priority implements Runnable {
 
     static boolean stop = false;
     static String currentName;
-    int id = 0;
-
+    
 
     /* Construct a new thread. Notice that this
        constructor does not actually start the

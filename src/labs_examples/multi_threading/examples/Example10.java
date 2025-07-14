@@ -2,6 +2,23 @@ package labs_examples.multi_threading.examples;
 
 // Use wait() and notify() to create a ticking clock.
 
+// This program uses two threads (MyThread8 instances named "Tick" and "Tock") that take turns printing "Tick" and "Tock" five times using a shared TickTock object.
+
+// The TickTock class contains the shared state variable, which keeps track of what was printed last ("ticked" or "tocked"). This variable ensures the threads alternate correctly.
+
+// Each thread runs a for loop that calls either tick(true) or tock(true) five times. Inside these methods:
+
+// The if (!running) condition is used only at the end to cleanly exit. It's skipped during normal loop iterations.
+
+// tick(true) prints "Tick ", sets state = "ticked", calls notify() to wake the Tock thread, and then calls wait() until state becomes "tocked".
+
+// tock(true) prints "Tock", sets state = "tocked", calls notify() to wake the Tick thread, and then calls wait() until state becomes "ticked".
+
+// Because the methods are synchronized, only one thread can execute either tick() or tock() at a time. This prevents them from printing at the same time.
+// When the tick or the tock thread goes in waiting, it releases the lock on the tt object and as it notified the other thread that thread wakes up and aquires the lock on the tt object.
+
+// After both threads complete five iterations, they each call tick(false) or tock(false) to set the final state and notify the other thread one last time. These false calls don't print anything — they just ensure the other thread isn't left stuck in wait().
+
 class TickTock {
 
     String state; // contains the state of the clock

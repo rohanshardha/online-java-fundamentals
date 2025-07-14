@@ -1,7 +1,7 @@
 package labs_examples.multi_threading.examples;
 
 // Suspending, resuming, and stopping a thread.
-
+// synchronized works on an instance of a class (i.e., an object). At any given time, only one thread can execute a synchronized block or method that locks on the same object.
 class MyThread9 implements Runnable {
     Thread thrd;
     boolean suspended;
