@@ -6,8 +6,8 @@ import java.util.ArrayList;
 class Exercise_04 {
     public static void main(String[] args) {
         ArrayList<Member> members = new ArrayList<>();
-        String filePath = "C:/Users/rpsha/Projects/online-java-fundamentals/src/labs_examples/input_output/files/exercise04Input.csv";
-        String outputPath = "C:/Users/rpsha/Projects/online-java-fundamentals/src/labs_examples/input_output/files/exercise04Output.csv";
+        String filePath = "C:/Users/rpsha/courses/codingNomadsJava/src/labs_examples/input_output/files/exercise04Input.csv";
+        String outputPath = "C:/Users/rpsha/courses/codingNomadsJava/src/labs_examples/input_output/files/exercise04Output.csv";
 
         // Reading and parsing CSV
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
