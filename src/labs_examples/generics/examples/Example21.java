@@ -15,6 +15,9 @@ class Gen5<T extends Number> {
         // But, this statement is OK.
         vals = nums; // OK to assign reference to existent array
     }
+    public static void intSum() {
+        
+    } 
 }
 
 class GenArrays {

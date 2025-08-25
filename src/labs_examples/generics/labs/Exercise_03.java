@@ -26,6 +26,7 @@ public class Exercise_03 {
     }
 
     // 2) Count how many Strings in the collection are palindromes
+    // lose coupling here to have any type of data structure having a string(s) 
     public static int countPalindromes(Collection<String> strings) {
         int count = 0;
         for (String s : strings) {
